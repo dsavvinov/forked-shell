@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.spbau.master.software.design.shell</OriginalElement>
+  <nodes>
+    <node x="0.0" y="91.0">edu.spbau.master.software.design.shell.command.impl.CatCommand</node>
+    <node x="171.0" y="248.0">edu.spbau.master.software.design.shell.parser.VariableResolver</node>
+    <node x="222.0" y="638.0">edu.spbau.master.software.design.shell.app.signals.ExitSignalUpdater</node>
+    <node x="573.0" y="714.0">edu.spbau.master.software.design.shell.app.BackendBuilder</node>
+    <node x="192.0" y="714.0">edu.spbau.master.software.design.shell.parser.ParserException</node>
+    <node x="166.0" y="866.0">edu.spbau.master.software.design.shell.parser.RegexpUtil</node>
+    <node x="0.0" y="942.0">edu.spbau.master.software.design.shell.Main</node>
+    <node x="0.0" y="714.0">edu.spbau.master.software.design.shell.model.CommandModel</node>
+    <node x="423.0" y="638.0">edu.spbau.master.software.design.shell.command.CommandFactory</node>
+    <node x="338.0" y="248.0">edu.spbau.master.software.design.shell.parser.CommandParser</node>
+    <node x="154.0" y="562.0">edu.spbau.master.software.design.shell.parser.CommandTerm</node>
+    <node x="147.0" y="91.0">edu.spbau.master.software.design.shell.command.impl.ExitCommand</node>
+    <node x="454.0" y="91.0">edu.spbau.master.software.design.shell.command.impl.ProcessCommand</node>
+    <node x="384.0" y="714.0">edu.spbau.master.software.design.shell.model.CommandName</node>
+    <node x="594.0" y="866.0">edu.spbau.master.software.design.shell.model.Variable</node>
+    <node x="481.5" y="0.0">edu.spbau.master.software.design.shell.command.Command</node>
+    <node x="456.0" y="866.0">edu.spbau.master.software.design.shell.parser.TestUtils</node>
+    <node x="368.0" y="167.0">edu.spbau.master.software.design.shell.utils.Logging</node>
+    <node x="776.0" y="91.0">edu.spbau.master.software.design.shell.command.impl.PwdCommand</node>
+    <node x="399.0" y="405.0">edu.spbau.master.software.design.shell.parser.DoubleQuotBlockTerm</node>
+    <node x="362.0" y="790.0">edu.spbau.master.software.design.shell.model.CommandArg</node>
+    <node x="0.0" y="866.0">edu.spbau.master.software.design.shell.app.Environment</node>
+    <node x="206.0" y="405.0">edu.spbau.master.software.design.shell.parser.NonQuotBlockTerm</node>
+    <node x="930.0" y="91.0">edu.spbau.master.software.design.shell.command.impl.AssignmentCommand</node>
+    <node x="296.0" y="91.0">edu.spbau.master.software.design.shell.command.impl.EchoCommand</node>
+    <node x="0.0" y="790.0">edu.spbau.master.software.design.shell.parser.CommandLexer</node>
+    <node x="0.0" y="405.0">edu.spbau.master.software.design.shell.parser.SingleQuotBlockTerm</node>
+    <node x="188.0" y="790.0">edu.spbau.master.software.design.shell.model.VariableName</node>
+    <node x="506.0" y="248.0">edu.spbau.master.software.design.shell.command.CommandManager</node>
+    <node x="632.0" y="91.0">edu.spbau.master.software.design.shell.command.impl.WcCommand</node>
+    <node x="339.0" y="481.0">edu.spbau.master.software.design.shell.parser.VariableResolverSpec</node>
+    <node x="318.0" y="866.0">edu.spbau.master.software.design.shell.app.Backend</node>
+    <node x="91.5" y="481.0">edu.spbau.master.software.design.shell.parser.Expression</node>
+    <node x="647.2428571428571" y="167.0">edu.spbau.master.software.design.shell.app.signals.ExitSignalListener</node>
+    <node x="691.0" y="248.0">edu.spbau.master.software.design.shell.app.ConsoleReader</node>
+    <node x="0.0" y="638.0">edu.spbau.master.software.design.shell.parser.CommandLexerSpec</node>
+    <node x="534.0" y="790.0">edu.spbau.master.software.design.shell.model.VariableValue</node>
+    <node x="258.0" y="324.0">edu.spbau.master.software.design.shell.parser.Term</node>
+    <node x="0.0" y="562.0">edu.spbau.master.software.design.shell.parser.AssigningTerm</node>
+    <node x="0.0" y="248.0">edu.spbau.master.software.design.shell.parser.CommandLexer$</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.spbau.master.software.design.shell.command.impl.WcCommand" target="edu.spbau.master.software.design.shell.command.Command">
+      <point x="0.0" y="-15.5" />
+      <point x="694.0" y="71.0" />
+      <point x="547.7142857142858" y="71.0" />
+      <point x="14.71428571428578" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.command.impl.EchoCommand" target="edu.spbau.master.software.design.shell.command.Command">
+      <point x="0.0" y="-15.5" />
+      <point x="365.0" y="71.0" />
+      <point x="518.2857142857143" y="71.0" />
+      <point x="-14.714285714285666" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.parser.CommandTerm" target="edu.spbau.master.software.design.shell.parser.Expression">
+      <point x="0.0" y="-15.5" />
+      <point x="224.0" y="537.0" />
+      <point x="172.5" y="537.0" />
+      <point x="27.0" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.command.impl.CatCommand" target="edu.spbau.master.software.design.shell.command.Command">
+      <point x="0.0" y="-15.5" />
+      <point x="63.5" y="51.0" />
+      <point x="488.8571428571429" y="51.0" />
+      <point x="-44.14285714285711" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.parser.VariableResolver" target="edu.spbau.master.software.design.shell.utils.Logging">
+      <point x="0.0" y="-15.5" />
+      <point x="244.5" y="228.0" />
+      <point x="394.4" y="228.0" />
+      <point x="-17.600000000000023" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.app.ConsoleReader" target="edu.spbau.master.software.design.shell.app.signals.ExitSignalListener">
+      <point x="34.5" y="-15.5" />
+      <point x="794.5" y="228.0" />
+      <point x="764.2428571428571" y="228.0" />
+      <point x="39.0" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.parser.SingleQuotBlockTerm" target="edu.spbau.master.software.design.shell.parser.Term">
+      <point x="0.0" y="-15.5" />
+      <point x="93.0" y="380.0" />
+      <point x="269.5" y="380.0" />
+      <point x="-23.0" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.command.CommandManager" target="edu.spbau.master.software.design.shell.utils.Logging">
+      <point x="-41.25" y="-15.5" />
+      <point x="547.25" y="228.0" />
+      <point x="429.6" y="228.0" />
+      <point x="17.600000000000023" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.parser.CommandParser" target="edu.spbau.master.software.design.shell.utils.Logging">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.parser.DoubleQuotBlockTerm" target="edu.spbau.master.software.design.shell.parser.Term">
+      <point x="0.0" y="-15.5" />
+      <point x="496.5" y="380.0" />
+      <point x="315.5" y="380.0" />
+      <point x="23.0" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.parser.NonQuotBlockTerm" target="edu.spbau.master.software.design.shell.parser.Term">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.command.impl.ProcessCommand" target="edu.spbau.master.software.design.shell.command.Command">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.command.CommandManager" target="edu.spbau.master.software.design.shell.app.signals.ExitSignalListener">
+      <point x="41.25" y="-15.5" />
+      <point x="629.75" y="228.0" />
+      <point x="686.2428571428571" y="228.0" />
+      <point x="-39.0" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.parser.CommandLexer$" target="edu.spbau.master.software.design.shell.utils.Logging">
+      <point x="0.0" y="-15.5" />
+      <point x="75.5" y="218.0" />
+      <point x="376.80000000000007" y="218.0" />
+      <point x="-35.19999999999999" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.parser.AssigningTerm" target="edu.spbau.master.software.design.shell.parser.Expression">
+      <point x="0.0" y="-15.5" />
+      <point x="67.0" y="537.0" />
+      <point x="118.5" y="537.0" />
+      <point x="-27.0" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.command.impl.PwdCommand" target="edu.spbau.master.software.design.shell.command.Command">
+      <point x="0.0" y="-15.5" />
+      <point x="843.0" y="61.0" />
+      <point x="562.4285714285714" y="61.0" />
+      <point x="29.428571428571445" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.app.ConsoleReader" target="edu.spbau.master.software.design.shell.utils.Logging">
+      <point x="-34.5" y="-15.5" />
+      <point x="725.5" y="218.0" />
+      <point x="447.20000000000005" y="218.0" />
+      <point x="35.19999999999999" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.command.impl.ExitCommand" target="edu.spbau.master.software.design.shell.command.Command">
+      <point x="0.0" y="-15.5" />
+      <point x="211.5" y="61.0" />
+      <point x="503.57142857142856" y="61.0" />
+      <point x="-29.428571428571445" y="15.5" />
+    </edge>
+    <edge source="edu.spbau.master.software.design.shell.command.impl.AssignmentCommand" target="edu.spbau.master.software.design.shell.command.Command">
+      <point x="0.0" y="-15.5" />
+      <point x="1022.0" y="51.0" />
+      <point x="577.1428571428571" y="51.0" />
+      <point x="44.14285714285711" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="558.0" y="370.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
