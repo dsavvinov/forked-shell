@@ -10,7 +10,7 @@ object RegexpUtil {
 
   private[parser] val lettersRegex = """[A-Za-z]""" r
   private[parser] val digitsRegex = """[0-9]""" r
-  private[parser] val punctuationRegex = """[\.\$\/-]""" r
+  private[parser] val punctuationRegex = """[\.\$\/,!-]""" r
 
   private[parser] val assignRegex = "=" r
   private[parser] val spaceRegex = """\s""" r
