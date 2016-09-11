@@ -15,12 +15,12 @@
   
   *Example*
   
-  > echo “Hello, world!”
+  \> echo “Hello, world!”
   Hello, world!
-  > FILE=example.txt
-  > cat $FILE
+  \> FILE=example.txt
+  \> cat $FILE
   Some example text
-  > cat example.txt | wc
+  \> cat example.txt | wc
   1 3 18
   
   
