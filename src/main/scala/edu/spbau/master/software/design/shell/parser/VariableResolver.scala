@@ -15,7 +15,7 @@ class VariableResolver(environment: Environment) extends Logging {
     (for {
       regexMatch ← variableRegex findAllIn source
     } yield {
-      val variableName = VariableName(regexMatch.toString)
+      val variableName = VariableName(regexMatch.toString.substring(1))
       val variableValue = environment.getVariableValue(variableName)
 
       log.debug("Variable {} has value {}", variableName, variableValue)
@@ -27,7 +27,7 @@ class VariableResolver(environment: Environment) extends Logging {
   private def withVariablesSubstitution(source: String): String = {
     log.debug("Start of substitution of variables in {}", source)
     val result = (source /: getVariableMatches(source)) { case (s, variable) ⇒
-      s.replace(variable.name name, variable.value value)
+      s.replace("$" + variable.name.name, variable.value value)
     }
     log.debug("End of substitution of variables with result {}", result)
     result

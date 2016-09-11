@@ -38,9 +38,9 @@ class VariableResolverSpec extends FlatSpec {
   it should "Substitute values " in {
     checkCommandListEquals(
       getVariableResolver(
-        V(VN("$x"), VV("ho")),
-        V(VN("$8"), VV("haha")),
-        V(VN("$14"), VV("hoho"))
+        V(VN("x"), VV("ho")),
+        V(VN("8"), VV("haha")),
+        V(VN("14"), VV("hoho"))
       )(
         Seq(
           CT(NT("ec$x"), Seq(DT("loul $14  $8 $8  $")))

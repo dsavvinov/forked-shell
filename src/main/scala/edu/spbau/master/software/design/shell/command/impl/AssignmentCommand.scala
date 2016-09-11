@@ -14,7 +14,7 @@ class AssignmentCommand(environment: Environment) extends Command {
   override def execute(command: CommandModel): ReturnType = {
     require(command.args.length == 2, "Assign must have 2 args")
 
-    environment.updateVariableValue(VariableName("$" + command.args.head.value),
+    environment.updateVariableValue(VariableName(command.args.head.value),
       VariableValue(command.args(1).value))
 
     command.args(1).value
