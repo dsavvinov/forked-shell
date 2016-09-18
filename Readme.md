@@ -2,6 +2,9 @@
   
   Develop the architecture and implement a prototype command line interpreter
   
+  Tracker:      
+  https://www.pivotaltracker.com/n/projects/1866561
+  
 ---
 ##  Supported commands:
    * cat
@@ -9,6 +12,7 @@
    * wc
    * pwd
    * exit
+   * grep
   
 ---
   Supported strong and weak quoting, $, calling of external program, pipes

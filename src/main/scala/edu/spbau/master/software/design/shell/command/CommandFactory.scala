@@ -31,6 +31,9 @@ class CommandFactory(environment: Environment,
     },
     CommandName("=") → {
       new AssignmentCommand(environment)
+    },
+    CommandName("grep") → {
+      new GrepCommand
     }
   )
 
