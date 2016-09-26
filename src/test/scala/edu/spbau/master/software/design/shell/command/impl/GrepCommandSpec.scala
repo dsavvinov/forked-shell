@@ -55,4 +55,15 @@ class GrepCommandSpec extends FlatSpec with Matchers {
       )) shouldEqual "test"
   }
 
+  it should "find lines with matching text in string" in {
+    (new GrepCommand).execute(
+      CommandModel(
+        CommandName("grep"),
+        CommandArg("test"),
+        CommandArg(
+          "hello\n1 2 3 4 5\nfirst second\ntest\nTEST"
+        )
+      )) shouldEqual "test"
+  }
+
 }

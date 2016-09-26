@@ -8,6 +8,7 @@ import edu.spbau.master.software.design.shell.command.impl.GrepCommand.GrepOptio
 import edu.spbau.master.software.design.shell.model.CommandModel
 
 import scala.io.Source
+import scala.util.Try
 import scala.util.matching.Regex
 
 /**
@@ -19,7 +20,6 @@ class GrepCommand extends Command {
 
   override def execute(command: CommandModel): ReturnType = {
     require(command.args.size >= 2, "Grep must have more than 2 param")
-    require(Files.exists(Paths.get(command.args.last.value)), "No such file")
 
     val optionsArgs = command.args.dropRight(2).map(_.value)
     val patternAndFileName = command.args.takeRight(2).map(_.value)
@@ -34,7 +34,18 @@ class GrepCommand extends Command {
         val textTransformer =
           new OptionTransformer(options) with CaseSensitiveTransformer
 
-        val lines = Source.fromFile(fileName).getLines()
+        val lines: Iterator[String] = if (
+          Try(
+            Paths.get(command.args.last.value)
+          )
+            .toOption
+            .map(Files.exists(_))
+            .exists(p ⇒ p)
+        ) {
+          Source.fromFile(fileName).getLines()
+        } else {
+          command.args.last.value.split("\n").toIterator
+        }
 
         val matchingLinesIterator = lines.withFilter { line ⇒
           regex.findFirstIn(textTransformer.transform(line)).isDefined
