@@ -34,6 +34,12 @@ class CommandFactory(environment: Environment,
     },
     CommandName("grep") → {
       new GrepCommand
+    },
+    CommandName("ls") → {
+      new LsCommand
+    },
+    CommandName("cd") → {
+      new CdCommand
     }
   )
 
